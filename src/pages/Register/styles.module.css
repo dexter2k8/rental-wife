@@ -1,0 +1,168 @@
+.content {
+  min-height: 100vh;
+  padding: 1rem;
+  background-image: linear-gradient(#5c088450, #5c088450), url(../../assets/waves.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  animation: animatedBackground 10s linear infinite alternate;
+  background-size: cover;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+.formField {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  line-height: 4;
+}
+
+.formField form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formField form div {
+  display: flex;
+  align-items: center;
+  background: #e6e6e6;
+  border-radius: 25px;
+  margin-bottom: 0.6rem;
+  height: 3rem;
+  padding: 1rem;
+}
+
+.formField form div input {
+  background: transparent;
+  width: 100%;
+  padding: 1rem;
+}
+
+.formField button {
+  height: 3rem;
+  border-radius: 25px;
+  background: var(--primary-color);
+  color: #fff;
+  border: 2px solid var(--primary-color);
+}
+
+.formField button:hover {
+  background: #fff;
+  color: var(--primary-color);
+}
+
+fieldset {
+  display: flex;
+  justify-content: center;
+}
+
+fieldset label {
+  margin: 1.8rem;
+  margin-left: 0.5rem;
+  margin-right: 1.2rem;
+  line-height: 1;
+}
+
+fieldset input {
+  margin-left: 1.2rem;
+}
+
+.goToLogin {
+  margin-top: 0.5rem;
+  margin-bottom: -1rem;
+}
+
+@media (min-width: 480px) {
+  .formField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .formField form {
+    width: 100%;
+  }
+
+  .formField form div {
+    height: 2rem;
+  }
+
+  .formField button {
+    margin-top: 1rem;
+  }
+
+  .goToLogin {
+    margin-top: 0;
+    margin-bottom: -1.8rem;
+  }
+
+  fieldset label {
+    margin: 0.4rem;
+    margin-right: 0.8rem;
+  }
+
+  fieldset input {
+    margin: 0;
+    margin-left: 0.8rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formField {
+    width: 960px;
+    padding: 4rem, 4rem, 4rem;
+    gap: 6rem;
+  }
+
+  .formField form div {
+    height: 3rem;
+  }
+
+  .formField figure {
+    display: flex;
+    width: 40%;
+  }
+
+  .formField figure img {
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+
+  .formField form {
+    width: 36%;
+  }
+
+  .formField form h2 {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .formField button {
+    margin-top: 1rem;
+  }
+
+  fieldset {
+    margin-top: 0.6rem;
+  }
+
+  .goToLogin {
+    margin-top: 6rem;
+    margin-bottom: 0;
+  }
+}

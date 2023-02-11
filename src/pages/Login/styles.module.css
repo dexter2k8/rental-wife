@@ -1,0 +1,129 @@
+.content {
+  min-height: 100vh;
+  padding: 1rem;
+  background-image: linear-gradient(#5c088450, #5c088450), url(../../assets/waves.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  animation: animatedBackground 10s linear infinite alternate;
+  background-size: cover;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+.formField {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  line-height: 4;
+}
+
+.formField form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formField form div {
+  display: flex;
+  align-items: center;
+  background: #e6e6e6;
+  border-radius: 25px;
+  margin-bottom: 0.6rem;
+  height: 3rem;
+  padding: 1rem;
+}
+
+.formField form div input {
+  background: transparent;
+  width: 100%;
+  padding: 1rem;
+}
+
+.formField button {
+  margin-top: 2rem;
+  height: 3rem;
+  border-radius: 25px;
+  background: var(--primary-color);
+  color: #fff;
+  border: 2px solid var(--primary-color);
+}
+
+.formField button:hover {
+  background: #fff;
+  color: var(--primary-color);
+}
+
+.goToRegister {
+  margin-top: 4rem;
+}
+
+@media (min-width: 480px) {
+  .formField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .formField form {
+    width: 100%;
+  }
+
+  .formField button {
+    margin-top: 1rem;
+  }
+
+  .goToRegister {
+    margin-top: 0;
+    margin-bottom: -1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formField {
+    width: 960px;
+    padding: 4rem, 4rem, 4rem;
+    gap: 6rem;
+  }
+
+  .formField figure {
+    display: flex;
+    width: 40%;
+  }
+
+  .formField figure img {
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+
+  .formField form {
+    width: 33%;
+  }
+
+  .formField form h2 {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .formField button {
+    margin-top: 2rem;
+  }
+
+  .goToRegister {
+    margin-top: 8rem;
+  }
+}
