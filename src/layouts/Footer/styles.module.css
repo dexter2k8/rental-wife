@@ -1,0 +1,41 @@
+.container {
+  background: rgb(71, 73, 74);
+  background-image: linear-gradient(to bottom, #232526, #414345);
+  padding: 1rem;
+  margin-top: 1rem;
+  overflow: auto;
+}
+
+.content {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.content img {
+  width: 12rem;
+}
+
+.members {
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.members ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.25rem;
+  width: 50rem;
+  margin-top: 0.25rem;
+}
+
+.members ul li {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  align-items: center;
+  width: 11rem;
+  text-align: center;
+}

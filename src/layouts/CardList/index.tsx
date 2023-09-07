@@ -1,6 +1,5 @@
 import styles from "./styles.module.css";
 import { Avatar, Button } from "@mui/material";
-import woman from "../../assets/woman.png";
 
 interface ICardListProps {
   id: number;

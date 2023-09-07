@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Filter from "../../components/Filter";
 import CardList from "../../layouts/CardList";
 import woman from "../../assets/woman.png";
+import Footer from "../../layouts/Footer";
+import Transition from "../../components/Transition";
 
 const Home = () => {
   return (
@@ -13,16 +15,19 @@ const Home = () => {
           <Link to="/register">Cadastrar</Link>
         </div>
       </Header>
-      <div className={styles.content}>
-        <section>
-          <h2>Encontre aqui as opções mais seguras</h2>
-          <div>
-            <Filter label="Serviços" data={mockServices} />
-            <Filter label="Localização" data={mockLocations} />
-          </div>
-        </section>
-        <CardList user={users} />
-      </div>
+      <Transition>
+        <div className={styles.content}>
+          <section>
+            <h2>Encontre aqui as opções mais seguras</h2>
+            <div>
+              <Filter label="Serviços" data={mockServices} />
+              <Filter label="Localização" data={mockLocations} />
+            </div>
+          </section>
+          <CardList user={users} />
+        </div>
+      </Transition>
+      <Footer />
     </>
   );
 };
