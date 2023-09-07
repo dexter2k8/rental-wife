@@ -1,4 +1,5 @@
 import { Autocomplete, TextField } from "@mui/material";
+import "./styles.css";
 
 interface IFilterProps {
   label: string;
@@ -10,7 +11,6 @@ const Filter = ({ label, data }: IFilterProps) => {
     <Autocomplete
       options={data}
       renderInput={(params) => <TextField {...params} label={label} />}
-      sx={{ width: 180 }}
     />
   );
 };

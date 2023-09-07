@@ -1,0 +1,15 @@
+.MuiAutocomplete-root {
+  min-width: 12rem;
+}
+
+.MuiAutocomplete-root .MuiOutlinedInput-root {
+  padding: 0 9px !important;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  top: -8px !important;
+}
+
+.Mui-focused fieldset {
+  border-color: var(--primary-color) !important;
+}
