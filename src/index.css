@@ -45,11 +45,6 @@ button {
   transition: 0.3s;
 }
 
-a:hover {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
 @media (min-width: 460px) {
   .container {
     margin: 0 auto;

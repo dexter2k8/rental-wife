@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 import logoForm from "../../assets/logoForm.svg";
 import { Link } from "react-router-dom";
 import { FaEnvelope, FaLock, FaUser, FaEye, FaEyeSlash } from "react-icons/fa";
-import Transition from "../../Transition";
+import Transition from "../../components/Transition";
 
 const Register = () => {
   return (
