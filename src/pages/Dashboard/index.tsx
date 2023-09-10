@@ -7,7 +7,7 @@ import Footer from "../../layouts/Footer";
 import Transition from "../../components/Transition";
 import { mockLocations, mockServices, users } from "../../mock/workers";
 
-const Home = () => {
+const Dashboard = () => {
   return (
     <>
       <Header>
@@ -32,4 +32,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Dashboard;
