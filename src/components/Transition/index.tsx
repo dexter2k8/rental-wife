@@ -1,7 +1,8 @@
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
+import { IChildren } from "../../interfaces";
 
-const Transition = ({ children }: { children: ReactNode }) => {
+const Transition = ({ children }: IChildren) => {
   const transitions = {
     initial: { opacity: 0, x: 100 },
     animate: { opacity: 1, x: 0 },
