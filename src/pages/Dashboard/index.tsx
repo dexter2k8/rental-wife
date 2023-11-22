@@ -6,14 +6,17 @@ import CardList from "../../layouts/CardList";
 import Footer from "../../layouts/Footer";
 import Transition from "../../components/Transition";
 import { mockLocations, mockServices, users } from "../../mock/workers";
+import UserDropdown from "../../components/UserDropdown";
+import { Avatar } from "@mui/material";
+import woman from "../../assets/woman.png";
 
 const Dashboard = () => {
   return (
     <>
       <Header>
-        <div className={styles.headerLink}>
-          <Link to="/register">Cadastrar</Link>
-        </div>
+        <UserDropdown>
+          <Avatar src={woman} />
+        </UserDropdown>
       </Header>
       <Transition>
         <div className={styles.content}>
