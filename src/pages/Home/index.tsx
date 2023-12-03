@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 import Header from "../../layouts/Header";
 import { Link } from "react-router-dom";
-import Filter from "../../components/Filter";
+import Filter from "../../components/Autocomplete";
 import CardList from "../../layouts/CardList";
 import Footer from "../../layouts/Footer";
 import Transition from "../../components/Transition";

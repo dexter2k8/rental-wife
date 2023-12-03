@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 import Header from "../../layouts/Header";
 import { Link } from "react-router-dom";
-import Filter from "../../components/Filter";
+import Autocomplete from "../../components/Autocomplete";
 import CardList from "../../layouts/CardList";
 import Footer from "../../layouts/Footer";
 import Transition from "../../components/Transition";
@@ -23,8 +23,8 @@ const Dashboard = () => {
           <section>
             <h2>Encontre aqui as opções mais seguras</h2>
             <div>
-              <Filter label="Serviços" data={mockServices} />
-              <Filter label="Localização" data={mockLocations} />
+              <Autocomplete label="Serviços" data={mockServices} />
+              <Autocomplete label="Localização" data={mockLocations} />
             </div>
           </section>
           <CardList user={users} />
