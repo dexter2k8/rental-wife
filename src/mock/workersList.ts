@@ -1,9 +1,15 @@
 import woman from "../assets/woman.png";
 
 export const mockServices = ["Encanador", "Eletricista", "Pedreiro", "Pintor", "Marceneiro"];
-export const mockLocations = ["São Paulo", "Rio de Janeiro", "Curitiba", "Fortaleza", "Belo Horizonte"];
+export const mockLocations = [
+  "São Paulo",
+  "Rio de Janeiro",
+  "Curitiba",
+  "Fortaleza",
+  "Belo Horizonte",
+];
 
-export const users = [
+export const mockWorkersList = [
   {
     id: 0,
     avatar: woman,

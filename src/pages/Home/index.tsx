@@ -5,7 +5,7 @@ import Filter from "../../components/Autocomplete";
 import CardList from "../../layouts/CardList";
 import Footer from "../../layouts/Footer";
 import Transition from "../../components/Transition";
-import { mockLocations, mockServices, users } from "../../mock/workers";
+import { mockLocations, mockServices, mockWorkersList } from "../../mock/workersList";
 
 const Home = () => {
   return (
@@ -24,7 +24,7 @@ const Home = () => {
               <Filter label="Localização" data={mockLocations} />
             </div>
           </section>
-          <CardList user={users} />
+          <CardList user={mockWorkersList} />
         </div>
       </Transition>
       <Footer />

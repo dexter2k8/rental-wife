@@ -5,7 +5,7 @@ import Autocomplete from "../../components/Autocomplete";
 import CardList from "../../layouts/CardList";
 import Footer from "../../layouts/Footer";
 import Transition from "../../components/Transition";
-import { mockLocations, mockServices, users } from "../../mock/workers";
+import { mockLocations, mockServices, mockWorkersList } from "../../mock/workersList";
 import UserDropdown from "../../components/UserDropdown";
 import { Avatar } from "@mui/material";
 import woman from "../../assets/woman.png";
@@ -27,7 +27,7 @@ const Dashboard = () => {
               <Autocomplete label="Localização" data={mockLocations} />
             </div>
           </section>
-          <CardList user={users} />
+          <CardList user={mockWorkersList} />
         </div>
       </Transition>
       <Footer />
