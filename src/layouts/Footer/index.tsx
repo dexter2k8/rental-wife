@@ -13,8 +13,12 @@ export interface IEquip {
 
 const Footer = () => {
   return (
-    <footer className={styles.container}>
-      <div className={styles.content}>
+    <footer
+      className={styles.container}
+      onMouseEnter={(e) => e.currentTarget.classList.add(styles.show)}
+      onMouseLeave={(e) => e.currentTarget.classList.remove(styles.show)}
+    >
+      <div className={`${styles.content}`}>
         <img src={logoFooter} alt="logo" />
         <div className={styles.members}>
           <h3>Colaboradores</h3>
@@ -33,6 +37,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
+        <div className={styles.copyright}></div>
       </div>
     </footer>
   );

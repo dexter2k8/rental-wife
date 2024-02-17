@@ -2,7 +2,6 @@
   background-color: var(--list-color);
   padding: 1rem;
   border-radius: 8px;
-  max-height: 39.6rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

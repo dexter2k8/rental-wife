@@ -2,8 +2,10 @@
   background: rgb(71, 73, 74);
   background-image: linear-gradient(to bottom, #232526, #414345);
   padding: 1rem;
-  margin-top: 1rem;
-  overflow: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .content {
@@ -16,7 +18,8 @@
 }
 
 .content img {
-  width: 12rem;
+  width: 4rem;
+  transition: all 0.3s;
 }
 
 .members {
@@ -30,12 +33,24 @@
   gap: 0.25rem;
   width: 50rem;
   margin-top: 0.25rem;
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s;
 }
 
 .members ul li {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 1fr;
   align-items: center;
-  width: 11rem;
+  width: 10rem;
   text-align: center;
+}
+
+.show ul {
+  height: 8rem;
+  opacity: 1;
+}
+
+.show img {
+  width: 12rem;
 }

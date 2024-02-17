@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { IChildren, ILoginData, IRegisterData, IUserData } from "../interfaces";
 import { user, worker } from "../mock/users";
 import { toast } from "react-toastify";
@@ -10,7 +10,7 @@ interface IAuthContext {
   RegisterUser: (data: IRegisterData) => void;
 }
 
-export const AuthContext = createContext({} as IAuthContext);
+const AuthContext = createContext({} as IAuthContext);
 
 export const AuthProvider = ({ children }: IChildren) => {
   const navigate = useNavigate();
@@ -53,6 +53,7 @@ export const AuthProvider = ({ children }: IChildren) => {
   useEffect(() => {
     const LoadUser = async () => {
       const token = localStorage.getItem("@rental:token");
+      setUserData(user); // TODO: Remove this when route is protected
       if (token) {
         try {
           // axios.defaults.headers.authorization = `Bearer ${token}`;
@@ -71,3 +72,5 @@ export const AuthProvider = ({ children }: IChildren) => {
 
   return <AuthContext.Provider value={values}>{children}</AuthContext.Provider>;
 };
+
+export const useAuthContext = () => useContext(AuthContext);
