@@ -32,3 +32,11 @@ export interface IAuthResponse {
   accessToken: string;
   user: IUserData;
 }
+
+export interface IProposal {
+  user: { id: number; username: string; contact: string; avatar_img: string };
+  id: number;
+  status: "Analisar" | "Aceito" | "Recusado";
+  title: string;
+  description: string;
+}
