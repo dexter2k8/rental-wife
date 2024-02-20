@@ -33,10 +33,12 @@ export interface IAuthResponse {
   user: IUserData;
 }
 
+export type TStatus = "Analisar" | "Aceita" | "Recusada";
+
 export interface IProposal {
   user: { id: number; username: string; contact: string; avatar_img: string };
   id: number;
-  status: "Analisar" | "Aceito" | "Recusado";
+  status: TStatus;
   title: string;
   description: string;
 }

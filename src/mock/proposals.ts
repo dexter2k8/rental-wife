@@ -13,4 +13,16 @@ export const mockProposals: IProposal[] = [
     description: "Minha lâmpada queimou e precisa ser trocada.",
     status: "Analisar",
   },
+  {
+    user: {
+      id: 1,
+      username: "Maria",
+      contact: "222-3333",
+      avatar_img: "https://github.com/mariapimentel.png",
+    },
+    id: 1,
+    title: "Troca de resistência",
+    description: "Meu chuveiro queimou e precisa ser trocada a resistência.",
+    status: "Aceita",
+  },
 ];

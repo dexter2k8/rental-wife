@@ -54,14 +54,16 @@ const ProposalCards = ({ proposals }: IProposals) => {
               {selectedProposal?.user?.username}: {selectedProposal?.user?.contact}
             </p>
           </div>
-          <div className={styles.buttonContainer}>
-            <Button onClick={handleClose} variant="outlined">
-              Recusar
-            </Button>
-            <Button onClick={handleClose} variant="contained">
-              Aceitar
-            </Button>
-          </div>
+          {selectedProposal.status === "Analisar" && (
+            <div className={styles.buttonContainer}>
+              <Button onClick={handleClose} variant="outlined">
+                Recusar
+              </Button>
+              <Button onClick={handleClose} variant="contained">
+                Aceitar
+              </Button>
+            </div>
+          )}
         </div>
       </Modal>
     </>

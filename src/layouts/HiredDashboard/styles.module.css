@@ -12,6 +12,16 @@
   height: 100%;
 }
 
+.container .left_content .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .left_content .chips {
+  display: flex;
+  gap: 1rem;
+}
+
 .container .left_content .cards,
 .container .right_content .cards {
   width: 100%;
