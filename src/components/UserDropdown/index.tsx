@@ -75,7 +75,7 @@ const UserDropdown = ({ children }: IChildren) => {
         <motion.li
           variants={itemVariants}
           onClick={() => {
-            navigate("/dashboard/contractorproposals");
+            navigate("/dashboard/proposals");
           }}
         >
           <div className={styles.divIcon}>

@@ -19,8 +19,8 @@ const Dashboard = () => {
       </Header>
       <Transition>
         {/* <Loading /> */}
-        {/* <UserDashboard /> */}
-        <HiredDashboard />
+        <UserDashboard />
+        {/* <HiredDashboard /> */}
       </Transition>
       <Footer />
     </>
