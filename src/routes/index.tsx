@@ -5,6 +5,7 @@ import Register from "../pages/Register";
 import Home from "../pages/Home";
 import Dashboard from "../pages/Dashboard";
 import UserProposals from "../pages/proposals";
+import Details from "../pages/Details";
 
 const RoutesMain = () => (
   <Routes>
@@ -14,6 +15,7 @@ const RoutesMain = () => (
     <Route path="/proposals" element={<UserProposals />} />
     <Route path="/login" element={<Login />} />
     <Route path="/register" element={<Register />} />
+    <Route path="/details" element={<Details />} />
     <Route path="*" element={<h2>404 not found</h2>} />
   </Routes>
 );

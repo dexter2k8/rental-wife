@@ -7,13 +7,16 @@ import { useAuthContext } from "../../contexts/AuthContext";
 import UserDashboard from "../../layouts/UserDashboard";
 import Loading from "../../layouts/Loading";
 import HiredDashboard from "../../layouts/HiredDashboard";
+import { useState } from "react";
+import ModalEditProfile from "../../layouts/ModalEditProfile";
 
 const Dashboard = () => {
   const { userData } = useAuthContext();
+  const [editModalOpen, setEditModalOpen] = useState(false);
   return (
     <>
       <Header>
-        <UserDropdown>
+        <UserDropdown actionEdit={() => setEditModalOpen((prev) => !prev)}>
           <Avatar src={userData?.avatar_img} />
         </UserDropdown>
       </Header>
@@ -23,6 +26,8 @@ const Dashboard = () => {
         {/* <HiredDashboard /> */}
       </Transition>
       <Footer />
+
+      <ModalEditProfile open={editModalOpen} onClose={() => setEditModalOpen(false)} />
     </>
   );
 };

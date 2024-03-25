@@ -7,7 +7,6 @@ export const user = {
   services: ["Alvenaria", "Diarista"],
   id: 12,
   contact: "234-5678",
-  gender: "Feminino",
   location: "Taubaté",
 };
 

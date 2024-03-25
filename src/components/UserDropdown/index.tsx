@@ -14,7 +14,11 @@ const itemVariants: Variants = {
   closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
 };
 
-const UserDropdown = ({ children }: IChildren) => {
+interface IUserDropdown extends IChildren {
+  actionEdit?: () => void;
+}
+
+const UserDropdown = ({ children, actionEdit }: IUserDropdown) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   // const { user, logout } = UseRentalContext();
@@ -60,12 +64,7 @@ const UserDropdown = ({ children }: IChildren) => {
         }}
         style={{ pointerEvents: isOpen ? "auto" : "none" }}
       >
-        <motion.li
-          variants={itemVariants}
-          onClick={() => {
-            navigate("/profile");
-          }}
-        >
+        <motion.li variants={itemVariants} onClick={actionEdit}>
           <div className={styles.divIcon}>
             <CgProfile />
           </div>
