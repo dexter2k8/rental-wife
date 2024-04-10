@@ -1,11 +1,13 @@
 # rental-wife
 <p align="center">
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=WORK%20IN%20PROGGRESS&color=yellow&style=for-the-badge" #vitrinedev/>
+   <img src="http://img.shields.io/static/v1?label=STATUS&message=ALREADY%20DEVELOPED&color=RED&style=for-the-badge" #vitrinedev/>
 </p>
 
 <div align="justify">
 <b>Description</b>
 
 <p>A service provision platform aimed at the female public, where women can choose to hire female professionals to provide services that are usually performed by men.</p>
+
+<p>The project was developed for educational purposes, therefore, it does not have endpoints or route protection logic.</p>
 
 </div>
