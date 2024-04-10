@@ -74,7 +74,7 @@ const UserDropdown = ({ children, actionEdit }: IUserDropdown) => {
         <motion.li
           variants={itemVariants}
           onClick={() => {
-            navigate("/dashboard/proposals");
+            navigate("/proposals");
           }}
         >
           <div className={styles.divIcon}>
@@ -86,7 +86,7 @@ const UserDropdown = ({ children, actionEdit }: IUserDropdown) => {
         <motion.li
           variants={itemVariants}
           onClick={() => {
-            // logout();
+            navigate("/login");
           }}
         >
           <div className={styles.divIcon}>

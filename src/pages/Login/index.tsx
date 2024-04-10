@@ -22,7 +22,9 @@ const Login = () => {
               <FaLock />
               <input type="password" placeholder="Senha" />
             </div>
-            <button>Entrar</button>
+            <Link className={styles.enter} to="/dashboard">
+              Entrar
+            </Link>
             <Link to="/register">Esqueceu sua senha?</Link>
             <Link className={styles.goToRegister} to="/register">
               {" "}

@@ -4,7 +4,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Home from "../pages/Home";
 import Dashboard from "../pages/Dashboard";
-import UserProposals from "../pages/proposals";
+import UserProposals from "../pages/UserProposals";
 import Details from "../pages/Details";
 
 const RoutesMain = () => (

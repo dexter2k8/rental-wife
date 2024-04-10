@@ -47,16 +47,17 @@
   padding: 1rem;
 }
 
-.formField button {
+.formField .enter {
   margin-top: 2rem;
-  height: 3rem;
+  line-height: 3;
   border-radius: 25px;
   background: var(--primary-color);
   color: #fff;
   border: 2px solid var(--primary-color);
+  transition: 0.3s;
 }
 
-.formField button:hover {
+.formField .enter:hover {
   background: #fff;
   color: var(--primary-color);
 }

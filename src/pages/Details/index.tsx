@@ -7,9 +7,11 @@ import { useAuthContext } from "../../contexts/AuthContext";
 import Footer from "../../layouts/Footer";
 import { Link } from "react-router-dom";
 import ModalContract from "../../layouts/ModalContract";
+import ModalEditProfile from "../../layouts/ModalEditProfile";
 
 const Details = () => {
   const { userData } = useAuthContext();
+  const [editModalContractOpen, setEditModalContractOpen] = useState(false);
   const [editModalOpen, setEditModalOpen] = useState(false);
 
   return (
@@ -70,15 +72,15 @@ const Details = () => {
             <Link className={styles.buttonLink} type="button" to={"/dashboard"}>
               VOLTAR
             </Link>
-            <Button variant="contained" onClick={() => setEditModalOpen(true)}>
+            <Button variant="contained" onClick={() => setEditModalContractOpen(true)}>
               Contratar
             </Button>
           </div>
         </main>
       </div>
       <Footer />
-      {/* TODO: Implementar relações de rotas */}
-      <ModalContract open={editModalOpen} onClose={() => setEditModalOpen(false)} />
+      <ModalContract open={editModalContractOpen} onClose={() => setEditModalContractOpen(false)} />
+      <ModalEditProfile open={editModalOpen} onClose={() => setEditModalOpen(false)} />
     </>
   );
 };

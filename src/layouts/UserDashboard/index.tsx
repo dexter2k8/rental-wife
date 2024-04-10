@@ -13,7 +13,7 @@ const UserDashboard = () => {
           <Autocomplete label="Localização" data={mockLocations} />
         </div>
       </section>
-      <CardList user={mockWorkersList} />
+      <CardList isLogged user={mockWorkersList} />
     </div>
   );
 };
