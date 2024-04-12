@@ -12,6 +12,6 @@
 
 <p>Link: https://rental-wife-orpin.vercel.app/</p>
 
-![Page layout](https://github.com/dexter2k8/adminLife/blob/main/public/page.gif)
+![Page layout](https://github.com/dexter2k8/rental-wife/blob/main/src/assets/page.gif)
 
 </div>
