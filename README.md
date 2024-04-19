@@ -1,14 +1,16 @@
-# rental-wife
 <p align="center">
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=ALREADY%20DEVELOPED&color=green&style=for-the-badge" #vitrinedev/>
+   <img src="http://img.shields.io/static/v1?label=STATUS&message=ALREADY%20DEVELOPED&color=RED&style=for-the-badge" #vitrinedev/>
 </p>
 
 <div align="justify">
 <b>Description</b>
 
-<p>A simple technology hub, to demonstrate the use of most common react tools and libs</p>
-<p>react-hook-form | yup | styled-components | react-toastify | miragejs | axios | react-icons</p>
+<p>A service provision platform aimed at the female public, where women can choose to hire female professionals to provide services that are usually performed by men.</p>
 
-![Page layout](https://github.com/dexter2k8/dexter-hub/blob/main/public/page.gif)
+<p>The project was developed for educational purposes, therefore, it does not have endpoints or route protection logic.</p>
+
+<p>Link: https://rental-wife-orpin.vercel.app/</p>
+
+![Page layout](https://github.com/dexter2k8/rental-wife/blob/main/src/assets/page.gif)
 
 </div>
